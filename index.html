@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="theme-color" content="#1a2026" />
+    <title>Mundzir | Web Developer</title>
+    <link rel="shortcut icon" href="/assets/klihoiHOIHhroeiahr.png" />
+    <link rel="stylesheet" href="/assets/fontAwesome/css/font-awesome.min.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3345038149334534" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        :root {
+            --text-color: #8794a1;
+            --accent-color: #4db2ff;
+            --header-color: #fff;
+            --bg-rgb: 26, 32, 38;
+            --bg-color: rgb(var(--bg-rgb));
+            --header-bg-color: rgba(33, 42, 51, .9);
+            --inactive-bg-color: #212a33;
+            --inactive-color: #354352;
+        }
+
+        * {
+            box-sizing: border-box;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            margin: 0px;
+            background: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Poppins', sans-serif;
+            -webkit-user-select: none;
+            -webkit-touch-callout: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--accent-color);
+        }
+
+        #container {
+            width: 768px;
+            margin: 0px auto;
+            max-width: 100%;
+
+            padding: 0px 15px;
+        }
+
+        #header {
+            padding: 64px 0px;
+            /* border-bottom: 1px solid var(--inactive-color); */
+        } #header h1 {
+            font-size: 48px;
+            margin: 0px 0px 16px;
+            line-height: 1em;
+        } #header p#who {
+            color: var(--accent-color);
+        } #header button {
+            padding: 12px 24px;
+            background: var(--accent-color);
+            border-radius: 5px;
+            color: #FFF;
+            cursor: pointer;
+            border: 0px solid transparent;
+            font-size: 16px;
+        }
+
+        #skills, #portfolio, #profile, #contact, #footer_link, footer {
+            padding: 16px 16px;
+            border: 1px solid var(--inactive-color);
+            border-radius: 5px;
+            margin-bottom: 16px;
+        } #the-skills {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        } #skills div.coding {
+            padding: 16px 0px;
+            text-align: center;
+            background: var(--header-bg-color);
+            border-radius: 5px;
+            transition: .3s ease-in-out;
+        }
+
+        #skills div.coding:hover {
+            color: #5aec8c;
+            background: rgba(90, 236, 140, .1);
+        }
+
+        #portfolio h3 {
+            padding: 16px 16px;
+            color: #FFF;
+            background: var(--inactive-color);
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .ports {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        } .ports .theport {
+            border: 1px solid var(--inactive-color);
+            overflow: hidden;
+            border-radius: 5px;
+        }
+        
+        .ports .theport .topPort {
+            padding: 10px 16px;
+            background: var(--header-bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .ports .theport .topPort h5.port-title {
+            margin: 0px;
+            font-size: 18px;
+        } .ports .theport .topPort a {
+            font-size: 18px;
+        }
+        
+        
+        .ports .theport img {
+            width: 100%;
+        } .ports .theport .port-detail {
+            padding: 0px 15px;
+        } .ports .theport .port-detail p {
+            margin: 10px 0px;
+            font-size: 13px;
+        }
+
+        #contact table tr td {
+            padding: 0px 5px;
+        } #contact table tr td a {
+            color: var(--accent-color);
+        }
+
+        .mt-0 {margin-top: 0px;}
+        .mb-0 {margin-bottom: 0px;}
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--header-color);
+        }
+
+        @media (max-width: 768px) {
+            #the-skills {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 567px) {
+            #the-skills {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .ports {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <!-- <img src="assets/portfolio.jpg" alt="Winstarlink.com" style="height: 180px;object-fit: cover;margin-bottom: -7px;" /> -->
+    <div id="container">
+        <div id="header">
+            <h1>M. Mundzir Maula</h1>
+            <p id="who" class="mt-0">&lt; Web Developer /&gt;</p>
+            <p id="int">Seorang Web Developer yang telah berpengalaman membangun ratusan situs web, baik untuk project personal maupun company.</p>
+            <button id="contactMe">Hubungi Saya</button>
+        </div>
+        <div id="portfolio">
+            <h2 style="margin-top: 0px;" data-title="portfolio">Portfolio</h2>
+            <div data-content="portfolio">
+                <p>Berikut adalah beberapa contoh hasil kerja Saya:</p>
+                <!-- <h3>Web Development</h3> -->
+                <div class="ports">
+                    <!--<div class="theport">-->
+                    <!--    <div class="topPort">-->
+                    <!--        <h5 class="port-title">Al-Quran Nusantara</h5>-->
+                    <!--        <a href="https://mundzir.com/quran" target="_blank"><i class="fa fa-external-link"></i></a>-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                    <div class="theport">
+                        <div class="topPort">
+                            <h5 class="port-title">IDEAFLOX</h5>
+                            <a href="https://ideaflox.com" target="_blank"><i class="fa fa-external-link"></i></a>
+                        </div>
+                        <div class="port-detail">
+                            <p>Situs web perusahaan yang bergerak di bidang Software-house.</p>
+                        </div>
+                    </div>
+                    <div class="theport">
+                        <div class="topPort">
+                            <h5 class="port-title">Jasa Handal</h5>
+                            <a href="https://jasahandal.com" target="_blank"><i class="fa fa-external-link"></i></a>
+                        </div>
+                        <div class="port-detail">
+                            <p>Situs web penyedia beragam jasa di Jabodetabek.</p>
+                        </div>
+                    </div>
+                    <!--<div class="theport">-->
+                    <!--    <div class="topPort">-->
+                    <!--        <h5 class="port-title">SaveGram</h5>-->
+                    <!--        <a href="https://savegram.app" target="_blank"><i class="fa fa-external-link"></i></a>-->
+                    <!--    </div>-->
+                    <!--    <div class="port-detail">-->
+                    <!--        <p>Situs download foto &amp; video Instagram.</p>-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                    <div class="theport">
+                        <div class="topPort">
+                            <h5 class="port-title">Improve-Skill</h5>
+                            <a href="https://improve-skill.id" target="_blank"><i class="fa fa-external-link"></i></a>
+                        </div>
+                        <div class="port-detail">
+                            <p>Situs belajar online industri teknik.</p>
+                        </div>
+                    </div>
+                    <div class="theport">
+                        <div class="topPort">
+                            <h5 class="port-title">Gaplaw</h5>
+                            <a href="https://gaplaw.co.id" target="_blank"><i class="fa fa-external-link"></i></a>
+                        </div>
+                        <div class="port-detail">
+                            <p>Situs lembaga jasa hukum di Indonesia.</p>
+                        </div>
+                    </div>
+                    <div class="theport">
+                        <div class="topPort">
+                            <h5 class="port-title">Matelindo</h5>
+                            <a href="https://matelindo.com" target="_blank"><i class="fa fa-external-link"></i></a>
+                        </div>
+                        <div class="port-detail">
+                            <p>Situs web penyedia jasa pindahan di Jakarta.</p>
+                        </div>
+                    </div>
+                    <!--<div class="theport">-->
+                    <!--    <div class="topPort">-->
+                    <!--        <h5 class="port-title">Arizah Florist</h5>-->
+                    <!--        <a href="https://arizahflorist.com" target="_blank"><i class="fa fa-external-link"></i></a>-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+        <div id="skills">
+            <h2 style="margin-top: 0px;" data-title="skills">Skill Coding</h2>
+            <p>Berikut teknologi yang Saya gunakan untuk membuat situs web:</p>
+            <div data-content="skills">
+                <div id="the-skills">
+                    <div id="html" class="coding">HTML</div>
+                    <div id="css" class="coding">CSS</div>
+                    <div id="js" class="coding">JavaScript</div>
+                    <div id="php" class="coding">PHP</div>
+                    <div id="sql" class="coding">MySQL</div>
+                    <div id="bootstrap" class="coding">Bootstrap</div>
+                    <div id="jquery" class="coding">jQuery</div>
+                    <div id="codeigniter" class="coding">Codeigniter</div>
+                    <div id="laravel" class="coding">Laravel</div>
+                    <div id="laravel" class="coding">Python</div>
+                </div>
+            </div>
+        </div>
+        <div id="contact" style="margin-bottom: 64px;">
+            <h2 style="margin-top: 0px;" data-title="contact">Kontak Saya</h2>
+            <p>Anda dapat menghubungi Saya melalui:</p>
+            <table>
+                <tr><td><b>WhatsApp</b></td><td>:</td><td><a href="https://api.whatsapp.com/send/?phone=6281770084019&text=Hai%20Mundzir,%20saya%20berminat%20untuk%20menggunakan%20jasa%20Web%20Development%20yang%20Kamu%20tawarkan&type=phone_number&app_absent=0" target="_blank">0817-7008-4019</a></td></tr>
+                <tr><td><b>E-Mail</b></td><td>:</td><td><a href="mailto:contact@mundzir.com"  target="_blank">contact@mundzir.com</a></td></tr>
+                <tr><td><b>Telegram</b></td><td>:</td><td><a href="https://t.me/dzirce"  target="_blank">@dzirce</a></td></tr>
+            </table>
+        </div>
+        <!--<footer style="text-align: center;">-->
+        <!--    Salam hangat, Mundzir.-->
+        <!--</footer>-->
+    </div>
+    <div class="modal" style="display: flex;">
+        
+    </div>
+    <script src="assets/jquery.min.js"></script>
+    <script>
+        $("button#contactMe").on("click", function(){
+            window.open("https://api.whatsapp.com/send/?phone=6281770084019&text=Hai%20Mundzir,%20saya%20berminat%20untuk%20menggunakan%20jasa%20Web%20Development%20yang%20Kamu%20tawarkan&type=phone_number&app_absent=0");
+        });
+    </script>
+</body>
+</html>
